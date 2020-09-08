@@ -93,7 +93,7 @@ public interface StudentService {
 018配置文件application.properties
 #设置内嵌 Tomcat 端口号
  server.port=8090 
-# 设置上下文根
+#设置上下文根
  server.servlet.context-path=/
 #配置数据源
  spring.datasource.driver-class-name=com.mysql.jdbc.Driver
@@ -102,9 +102,9 @@ public interface StudentService {
  spring.datasource.password=123456
 #配置 dubbo 的服务提供者信息 #服务提供者应用名称(必须写，且不能重复)
  spring.application.name=018_springboot-dubbo-provider
-# 设置当前工程为服务提供者
+#设置当前工程为服务提供者
  spring.dubbo.server=true
-# 设置注册中心
+#设置注册中心
  spring.dubbo.registry=zookeeper://localhost:2181
 
  
@@ -132,11 +132,11 @@ public class StudentServiceImpl implements StudentService {
 019配置文件application.properties
 #设置内嵌 Tomcat 端口号
 server.port=8081
-# 设置上下文根
+#设置上下文根
 server.servlet.context-path=/
 #配置 dubbo 的服务提供者信息 #服务提供者应用名称(必须写，且不能重复)
 spring.application.name=019-springboot-dubbo-consumer
-# 设置注册中心
+#设置注册中心
 spring.dubbo.registry=zookeeper://localhost:2181
 
 编写控制器
